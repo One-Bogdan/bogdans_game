@@ -1,0 +1,47 @@
+body {
+  font-size: 20px;
+}
+
+div {
+  /* display: none; */
+  border: 3px solid;
+  margin: 5px;
+  padding: 5px;
+}
+
+p {
+  margin: 3px 0px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 5px 15px;
+}
+
+#answer1, #next1, #answer2, #next2, #answer3, #next3, #answer4, #next4 {
+  display: none;
+}
+
+#menu, #cards {
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#nextTheme1, #nextTheme2, #nextTheme3, #nextTheme4, #newGame1, #newGame2, #newGame3, #newGame4 {
+  width: 100%;
+  display: none;
+}
+
+#newGame {
+  width: 100%;
+}
+
+hr {
+  color: blue;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8 {
+  width: 45%;
+}
