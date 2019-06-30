@@ -57,7 +57,7 @@ const space = {
   'Как называется небесное тело, имеющее вид туманного светящегося пятна и светововой полосы в форме хвоста?': ['Комета ', 'Звезда', 'Астероид'],
   'Как называется гравитационно-связанная система из звёзд?': ['Галлактика ', 'Вселенная', 'Созвездие'],
   'Как называются обломки планет, упавшие на землю?': ['Астероиды', 'Метеориты ', 'Кометы'],
-  'В каком году состоялся первый полёт человека в космос?': ['В 1961 г.', 'В 1967 г.', 'В 1973 г.'],
+  'В каком году состоялся первый полёт человека в космос?': ['В 1961 г. ', 'В 1967 г.', 'В 1973 г.'],
   'Как называется крупнейшее море расположенное в западной части видимой стороны луны?': ['Море Холода', 'Море Дождей', 'Океан Бурь '],
   'На какой планете Солнечной системы самая высокая температура?': ['Марс', 'Венера ', 'Меркурий'],
   'Как называется самая удалённая планета солнечной системы?': ['Уран', 'Нептун ', 'Плутон'],
@@ -79,25 +79,25 @@ const art = {
   'Какой художник отрезал себе ухо?': ['Винсент Ван Гог ', 'Сальвадор Дали', 'Пабло Пикассо'],
   'Какая краска появилась раньше всех?': ['Синяя', 'Красная', 'Охра '],
   'Где находится Запретный город?': ['Токио', 'Пекин ', 'Шанхай'],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', ''],
-  '?': ['', '', '']
+  'Художники какой страны любили писать натюрморты с изображениями рыбы, дичи и обилием всевозможных предметов?': ['Голландия ', 'Россия', 'Италия'],
+  'Кто стал первым художником, чья работа была выставлена в Лувре ещё при жизни?': ['Поль Гоген', 'Жорж Брак ', 'Амедео Модильяни'],
+  'Какой стиль греческих колонн возник позже других и отличался особенной пышностью?': ['Дорический ордер', 'Коринфский ордер ', 'Ионический ордер'],
+  'В какую эпоху носили платья, в которых не пройдёшь в обычные двери?': ['Рококо ', 'Эпоха сентиментализма', 'Древний мир'],
+  'Какое название носит древнеримский амфитеатр — одно из самых грандиозных сооружений, сохранившихся до нашего времени?': ['Театр в Борсе', 'Театр в Сиде', 'Колизей '],
+  'В каком городе триумфальная арка находится на площади Звезды?': ['Париж ', 'Берлин', 'Барселона'],
+  'Какой дворцовый комплекс является самым обширным в мире?': ['Гунванфу', 'Запретный город ', 'Золотой дом Нерона'],
+  'Как звали художника, написавшего цикл картин "Времена года"?': ['Рафаэль Санти', 'Поль Гоген', 'Питер Брейгель Старший '],
+  'В каком возрасте Рафаэль Санти научился академическому мастерству?': ['В 18 лет', 'В 12 лет ', 'В 22 года'],
+  'Какая главная архитектурная задача была у греков?': ['Строительство храмов ', 'Строительство дворцов', 'Строительство церквей'],
+  'Какой художник дорожил своими усами больше всего в жизни и ежедневно укладывал их при помощи мусса?': ['Матисс', 'Сальвадор Дали ', 'Тициан'],
+  'Как называется первый период древнегреческого искусства?': ['Архаический', 'Геометрический ', 'Эллинистический'],
+  'Какая картина продана в 2006 году на аукционе "Сотбис" в Нью-Йорке за $95,2 млн?': ['"Пруд с кувшинками" Клода Моне', '"Дора Маар  с кошкой" Пабло Пикассо ', '"Портрет доктора Гаше" Ван Гога'],
+  'Как звали живописца, который подписывал картини словами "Как умею"?': ['Клод Моне', 'Николай Ге', 'Ян ван Эйк '],
+  'Какого художника безысходная нужда заставила сжечь часть картин, чтобы согреться?': ['Сальвадоо Дали', ' Пабло Пикассо ', 'Леонардо да Винчи'],
+  'Какой вид живописи занимается оформлением сцены и эскизами костюмов?': ['Жанровая живопись', ' Театрально-декорационная живопись', 'Анималистическая живопись'],
+  'При каком императоре произошёл Великий пожар в Риме?': ['Юстиниан', 'Нерон ', 'Юлий'],
+  'Как удревних греков называалось помещение для хранения живописных изображений?': ['Музей', 'Пинакотека ', 'Музей'],
+  'Какой продукт животного происхождения добавляли в краски, чтобы при нанесении они дольше держались?': ['Жир', 'Белок', 'Желток ']
 }
 
 const geography = {
@@ -158,7 +158,7 @@ const science = {
   'Как называется сплав двух металлов - меди и цинка?': ['Латунь ', 'Алюминий', 'Сталь'],
   'В каком городе была основана Российская академия наук?': ['Тверь', 'Москва', 'Санкт-Петербург '],
   'Какая энергия проявляется в движении?': ['Кинетическая ', 'Потенциальная', 'Электромагнитная'],
-  'Чему равна скорость света?': ['100000 км/с', '200000 км/с', '300000 км/с'],
+  'Чему равна скорость света?': ['100000 км/с', '200000 км/с', '300000 км/с '],
   'Как называется процесс перехода твёрдого кристаллического тела из твёрдого состояние в жидкое?': ['Разложение', 'Плавление ', 'Затвердевание'],
   'В каком году была опробована первая в истории инъекция инсулина?': ['В 1869 г', 'В 1896 г', 'В 1922 г '],
   'Из чего состоят облака?': ['Газ', 'Сера', 'Водяной пар '],
@@ -279,9 +279,7 @@ function CreatePlayer() {
   }
 
   this.addNode('div', '', 'cards', ['id'], [this.cardId]);
-
   this.createCard = function() {
-
     if (this.play == 4) {
       document.getElementById('menu').style.display = 'none'
     }
@@ -307,7 +305,6 @@ function CreatePlayer() {
         break;
     }
 
-
     this.addNode('p', 'Player ' + this.play, this.cardId, ['id'], [this.playerId]);
     this.addNode('hr', '', this.cardId, [], []);
     this.addNode('p', this.questKeys[this.rand], this.cardId, ['id'], [this.questionId]);
@@ -323,15 +320,15 @@ function CreatePlayer() {
     this.addNode('p', '', this.cardId, ['id'], [this.checkAnswerId]);
     this.addNode('p', '', this.cardId, ['id'], [this.winId]);
     this.addNode('button', 'Reply', this.cardId, ['id', 'class'], [this.replyId, 'reply']);
-    document.getElementById(this.replyId).addEventListener('click', this.setAnswer);
+    document.getElementById(this.replyId).addEventListener('click', bindSetAnswer);
     this.addNode('button', 'Next question >>', this.cardId, ['id'], [this.nextCardId]);
-    document.getElementById(this.nextCardId).addEventListener('click', this.showNextCard);
+    document.getElementById(this.nextCardId).addEventListener('click', bindNextCard);
     this.addNode('button', 'Next theme >>>', this.cardId, ['id'], [this.nextThemeId]);
     document.getElementById(this.nextThemeId).addEventListener('click', this.showNextTheme);
     this.addNode('button', 'NEW GAME', this.cardId, ['id'], [this.newGameId]);
     document.getElementById(this.newGameId).addEventListener('click', newGame);
     this.addNode('hr', '', this.cardId, [], []);
-    this.addNode('p', 'Count: ' + this.points + '&nbsp;&nbsp' + ' Theme: ' + this.showThemes[0], this.cardId, ['id'], [this.countId]);
+    this.addNode('p', 'Count: ' + this.points + '&nbsp;&nbsp' + ' Theme: ' + this.showThemes[0], this.cardId, ['id'], [this.pointId]);
   }
 
   this.setAnswer = function() {
@@ -363,8 +360,9 @@ function CreatePlayer() {
           this.corrAnswers.push(this.questKeys[this.rand]);
           this.questKeys.splice(this.rand, 1);
           // console.log('Corr: ' + this.corrAnswers, 'Incorr: ' + this.incorrAnswers, 'Keys: ' + this.questKeys);
-          this.points += (this.getPoint() + 5);
-          document.getElementById(this.countId).innerHTML = 'Count: ' + this.points + "&nbsp;&nbsp;" + " Theme: " + this.showThemes[0];
+          this.points += this.getPoint();
+          console.log(this.pointId)
+          document.getElementById(this.pointId).innerHTML = 'Count: ' + this.points + "&nbsp;&nbsp;" + " Theme: " + this.showThemes[0];
 
           if (this.points >= winPoints && this.themesArr.length > 0) {
             this.resetChecked();
@@ -384,7 +382,7 @@ function CreatePlayer() {
                 }
                 replayBtnList[i].disabled = true;
               }
-              document.getElementById(this.countId).innerHTML = 'Count: ' + this.points;
+              document.getElementById(this.pointId).innerHTML = 'Count: ' + this.points;
               document.getElementById(this.winId).innerHTML = "You win!!!";
               document.getElementById(this.newGameId).style.display = "block";
               document.getElementById('menu').style.display = "none";
@@ -408,7 +406,7 @@ function CreatePlayer() {
           this.resetChecked();
           this.showHideElems(this.cardId, this.nextCardId, true, false);
           this.showHideElems(this.questionId, '', true, false);
-          this.nextQuestionBtn();
+          bindNextQuestionBtn();
           break;
         }
         else if (arr[i] === false && i < arr.length) {
@@ -423,17 +421,19 @@ function CreatePlayer() {
           this.resetChecked();
           this.showHideElems(this.cardId, this.nextCardId, true, false);
           this.showHideElems(this.questionId, '', true, false);
-          this.nextQuestionBtn();
+          bindNextQuestionBtn();
           break;
         }
       }
     }
   }
+  var bindSetAnswer = this.setAnswer.bind(this);
 
   this.nextQuestionBtn = function() {
     this.showHideElems(this.cardId, this.nextCardId, true, false);
     document.getElementById(this.nextCardId).style.display = "block";
   }
+  var bindNextQuestionBtn = this.nextQuestionBtn.bind(this);
 
   this.showNextCard = function() {
     var data = this.getChildrens(this.cardId);
@@ -458,6 +458,7 @@ function CreatePlayer() {
     this.blankCard();
     this.createCard();
   }
+  var bindNextCard = this.showNextCard.bind(this);
 
   this.showNextTheme = function() {
     this.showHideElems(this.cardId, this.nextThemeId, true, false);
@@ -467,7 +468,11 @@ function CreatePlayer() {
     this.createCard();
   }
 
-
+  for (var prop in this) {
+    if (typeof this[prop] == 'function') {
+      this[prop] = this[prop].bind(this);
+    }
+  }
 }
 
 function newGame() {
@@ -483,11 +488,6 @@ function newGame() {
 addPlayer = function() {
   var plr = new CreatePlayer();
 
-  for (var prop in plr) {
-    if (typeof plr[prop] == 'function') {
-      plr[prop] = plr[prop].bind(plr);
-    }
-  }
   plr.createCard();
 
   document.getElementById('newPlayer').removeAttribute('onclick');
