@@ -177,9 +177,20 @@ function counter() {
 
   return add;
 }
-
 var player = counter();
-var winPoints = prompt('Input next theme points:');
+
+function winPoints() {
+  again:
+  while (true) {
+    var winPoints = prompt('Input next theme points:');
+    if (isNaN(winPoints) && !isFinite(winPoints)) {
+      alert('Введите число!');
+      break again;
+    }
+  }
+}
+winPoints();
+
 
 function CreatePlayer() {
   this.play = player();
