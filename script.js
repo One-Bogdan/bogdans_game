@@ -179,17 +179,17 @@ function counter() {
 }
 var player = counter();
 
-function winPoints() {
-  again:
-  while (true) {
-    var winPoints = prompt('Input next theme points:');
-    if (isNaN(winPoints) && !isFinite(winPoints)) {
-      alert('Введите число!');
-      break again;
-    }
-  }
-}
-winPoints();
+// function winPoints() {
+  // again:
+  // while (true) {
+    var winPoints = prompt('Выберите количество очков для перехода на следующую тему:');
+  //   if (isNaN(winPoints) && !isFinite(winPoints)) {
+  //     alert('Введите число!');
+  //     break again;
+  //   }
+  // }
+// }
+// winPoints();
 
 
 function CreatePlayer() {
@@ -222,7 +222,7 @@ function CreatePlayer() {
   this.nextCardId = 'next' + this.play;
   this.nextThemeId = 'nextTheme' + this.play;
   this.newGameId = 'newGame' + this.play;
-  this.pointId = 'count' + this.play;
+  this.pointId = 'Очки' + this.play;
 
   this.addNode = function(elem, text, id, attrs, values) {
     node = document.createElement(elem);
@@ -306,17 +306,17 @@ function CreatePlayer() {
         divStyle.style.background = 'lightblue';
         break;
       case 'Искусство':
-        divStyle.style.background = 'rgb(183, 22, 249)';
+        divStyle.style.background = 'rgb(203, 110, 241)';
         break;
       case 'География':
         divStyle.style.background = 'rgb(125, 244, 6)';
         break;
       case 'Наука':
-        divStyle.style.background = 'rgb(228, 95, 9)';
+        divStyle.style.background = 'rgb(255, 128, 0)';
         break;
     }
 
-    this.addNode('p', 'Player ' + this.play, this.cardId, ['id'], [this.playerId]);
+    this.addNode('p', 'Игрок ' + this.play, this.cardId, ['id'], [this.playerId]);
     this.addNode('hr', '', this.cardId, [], []);
     this.addNode('p', this.questKeys[this.rand], this.cardId, ['id'], [this.questionId]);
     this.addNode('br', '', this.questionId, [], []);
@@ -330,16 +330,16 @@ function CreatePlayer() {
     this.addNode('span', this.theme[this.questKeys[this.rand]][2], this.questionId, ['id'], [this.answer3Id]);
     this.addNode('p', '', this.cardId, ['id'], [this.checkAnswerId]);
     this.addNode('p', '', this.cardId, ['id'], [this.winId]);
-    this.addNode('button', 'Reply', this.cardId, ['id', 'class'], [this.replyId, 'reply']);
+    this.addNode('button', 'Ответить', this.cardId, ['id', 'class'], [this.replyId, 'reply']);
     document.getElementById(this.replyId).addEventListener('click', bindSetAnswer);
-    this.addNode('button', 'Next question >>', this.cardId, ['id'], [this.nextCardId]);
+    this.addNode('button', 'Следующий вопрос =>', this.cardId, ['id'], [this.nextCardId]);
     document.getElementById(this.nextCardId).addEventListener('click', bindNextCard);
-    this.addNode('button', 'Next theme >>>', this.cardId, ['id'], [this.nextThemeId]);
+    this.addNode('button', 'Следующая тема =>', this.cardId, ['id'], [this.nextThemeId]);
     document.getElementById(this.nextThemeId).addEventListener('click', this.showNextTheme);
-    this.addNode('button', 'NEW GAME', this.cardId, ['id'], [this.newGameId]);
+    this.addNode('button', 'НОВАЯ ИГРА', this.cardId, ['id'], [this.newGameId]);
     document.getElementById(this.newGameId).addEventListener('click', newGame);
     this.addNode('hr', '', this.cardId, [], []);
-    this.addNode('p', 'Count: ' + this.points + '&nbsp;&nbsp' + ' Theme: ' + this.showThemes[0], this.cardId, ['id'], [this.pointId]);
+    this.addNode('p', 'Очки: ' + this.points + '&nbsp;&nbsp' + ' Тема: ' + this.showThemes[0], this.cardId, ['id'], [this.pointId]);
   }
 
   this.setAnswer = function() {
@@ -360,20 +360,20 @@ function CreatePlayer() {
     }
 
     if (arr.every(checkChoice)) {
-      document.getElementById(this.checkAnswerId).innerHTML = 'Please, make a choice!';
+      document.getElementById(this.checkAnswerId).innerHTML = 'Пожалуйста, выберите ответ!';
       document.getElementById(this.cardId).style.backgroundColor = 'coral';
     }
     else {
       for (var i = 0; i < spanArr.length; i++) {
         if (arr[i] === true && spanArr[i].innerHTML.endsWith(' ')) {
-          document.getElementById(this.checkAnswerId).innerHTML = 'Correct answer!';
+          document.getElementById(this.checkAnswerId).innerHTML = 'Правильный ответ!';
           document.getElementById(this.cardId).style.backgroundColor = 'yellowgreen';
           this.corrAnswers.push(this.questKeys[this.rand]);
           this.questKeys.splice(this.rand, 1);
           // console.log('Corr: ' + this.corrAnswers, 'Incorr: ' + this.incorrAnswers, 'Keys: ' + this.questKeys);
           this.points += this.getPoint();
           console.log(this.pointId)
-          document.getElementById(this.pointId).innerHTML = 'Count: ' + this.points + "&nbsp;&nbsp;" + " Theme: " + this.showThemes[0];
+          document.getElementById(this.pointId).innerHTML = 'Очки: ' + this.points + "&nbsp;&nbsp;" + " Тема: " + this.showThemes[0];
 
           if (this.points >= winPoints && this.themesArr.length > 0) {
             this.resetChecked();
@@ -393,8 +393,8 @@ function CreatePlayer() {
                 }
                 replayBtnList[i].disabled = true;
               }
-              document.getElementById(this.pointId).innerHTML = 'Count: ' + this.points;
-              document.getElementById(this.winId).innerHTML = "You win!!!";
+              document.getElementById(this.pointId).innerHTML = 'Очки: ' + this.points;
+              document.getElementById(this.winId).innerHTML = "Вы выиграли!!!";
               document.getElementById(this.newGameId).style.display = "block";
               document.getElementById('menu').style.display = "none";
               this.resetChecked();
@@ -424,7 +424,7 @@ function CreatePlayer() {
           continue;
         }
         else {
-          document.getElementById(this.checkAnswerId).innerHTML = 'Incorrect answer!';
+          document.getElementById(this.checkAnswerId).innerHTML = 'Неправильный ответ!';
           document.getElementById(this.cardId).style.backgroundColor = 'red';
           // console.log('Corr: ' + this.corrAnswers, 'Incorr: ' + this.incorrAnswers, 'Keys: ' + this.questKeys);
           this.incorrAnswers.push(this.questKeys[this.rand]);
